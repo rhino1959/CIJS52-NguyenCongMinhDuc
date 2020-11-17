@@ -39,5 +39,5 @@ align-items: center;
     background-color:  tomato ;
 }
 .reverse {
-    
+    flex-direction: row-reverse;
 }
