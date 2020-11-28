@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.1/uuid.min.js" integrity="sha512-4JH7nC4nSqPixxbhZCLETJ+DUfHa+Ggk90LETm25fi/SitneSvtxkcWAUujvYrgKgvrvwv4NDAsFgdwCS79Dcw==" crossorigin="anonymous"></script>
+</head>
+<body>
+    Bài 2 (7đ): Hãy viết chương trình "Quản lý tủ sách cá nhân" bằng cách cài đặt các class sau với các chức năng: <br>
+    # Tạo tủ sách <br>
+    # Xem, thêm, bớt, sửa sách có trong tủ <br>
+    - Book: <br>
+        + id: định danh quyển sách <br>
+        + name: tên sách <br>
+        + price: giá thành <br>
+        + publishedDate: ngày phát hành <br>
+        + update(data): sửa thông tin quyển sách ứng với dữ liệu truyền vào <br>
+    - ComicBook kế thừa Book: <br>
+        + funny: độ hài hước đánh giá trên thang điểm 10 <br>
+        + pageNumber: số trang <br>
+    - TextBook kế thừa Book: <br>
+        + subject: tên môn học (VD: toán, văn, anh, ...) <br>
+        + grade: khối lớp áp dụng (VD: 1, 2, 3) <br>
+    - ScienceBook kế thừa Book: <br>
+        + major: lĩnh vực (VD: Công nghệ thông tin, Xây dựng, Y tế, ...) <br>
+    - BookShelf <br>
+        + name: tên tủ sách <br>
+        + owner: người sở hữu <br>
+        + dateModified: ngày sửa đổi <br>
+        + addBook(book): để thêm 1 quyển sách vào tủ. Tham số book phải là thể hiện của class Book (book là đối tượng khởi tạo từ class Book hoặc class kế thừa class Book) <br>
+            Câu hỏi: nếu truyền thể hiện của class ComicBook, TextBook, ScienceBook vào addBook liệu có được không? Vì sao? <br>
+        + updateBook(id, data): để sửa 1 quyển sách với id tương ứng có trong tủ sách <br>
+        + deleteBook(id): xóa 1 quyển sách có id tương ứng <br>
+        + showBooks(): liệt kê tất cả quyển sách có trong tủ <br>
+        + findBooks(name): tìm tất cả quyển sách có trong tủ theo name <br>
+    <script src="index.js"></script>
+</body>
+</html>
