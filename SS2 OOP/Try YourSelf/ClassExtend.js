@@ -19,7 +19,7 @@ const Dogg = new Animal ('chó', 'vàng', 4, 'cứt');
 console.log(Dogg);
 Dogg.eat('cứt');
 console.log(Dogg.isDangerous());    
-
+    
 
 
 
