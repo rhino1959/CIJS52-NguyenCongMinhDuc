@@ -1,0 +1,19 @@
+* lập trình hướng đối tượng: 
+-   là một kỹ thuật lập trình
+-   cho phép trừu tượng hóa những đối tượng thực ngoài đời vào code
+* đối tượng là gì ?
+-   tất cả mọi thứ đều là đối tượng 
+-   trong thế giới thực: 
+        vd: ô tô, màu sắc, sinh viên 
+- mỗi đối tượng đều có: 
+    + các thông tin trạng thái
+        vd: ô tô {năm sản xuất, hãng, tên ...}
+    + các hoạt động
+        vd: ô tô {tăng ga, phanh, phát nhạc, bật điều hòa...}
+=> mỗi đối tượng đều có thông tin, trạng thái và hoạt động
+
+* 2 khái niệm của OOP:
+-   class: 
+    + là một khuôn mẫu (propertype) định nghĩa các thuộc tính và các phương thức chung cho tất cả các đối tượng (object) cùng loại.
+    + mỗi đối tượng (object) là một thể hiện của một class (đối tượng là sản phẩm được tạo ra từ khuôn lớp)
+    
