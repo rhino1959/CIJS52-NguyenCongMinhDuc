@@ -6,16 +6,31 @@ class Student {
         this.name=name;
         this.dob=dob;
         this.address=address;
-        console.log('New User: ' + name);
-        console.log('Day of Birth: ' + dob);
-        console.log('Address: ' + address);
-        console.log('Age: ' + this.getAge())
-        console.log(this);
     }
     getAge () {
         return 2020 - this.dob
     }
 }
-//tạo user mới gồm toàn bộ các thuộc tính của Student (chưa có giá trị)
 const userA = new Student ('Đức',1999,'HN')
-const userB = new Student ('Hoàng',2017,'HN')
+
+class Admin {
+    listStudent
+    constructor (){
+        this.listStudent=[]
+    }
+    addStudent (student) {
+        this.listStudent.push(student)
+    }
+    getListStudent(){
+        for (const item of this.listStudent){
+            console.log(item);
+            console.log('tôi tên là ' + item.name);
+            console.log('tôi ' + item.getAge() + ' tuổi');
+            console.log('tôi đến từ: ' + item.address);
+        }
+    }
+}
+const admin = new Admin()
+admin.addStudent(userA)
+admin.addStudent(new Student ('Linh',1998,'HN'))
+admin.getListStudent()
