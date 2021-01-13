@@ -1,0 +1,17 @@
+cung cấp các công cụ dịch vụ:
+- đăng nhập đăng ký
+- database
+- lưu trữ 
+- ...
+
+-------------------------------------------------------------------------              
+            Cloud FireStore (database)
+- Collection ~ List Object cùng loại
+- Document ~ Object
+- Thao tác với database: 
+    + Create: tạo ra thông tin - thêm một Document mới
+    + Read: lấy thông tin về - lấy thông tin user 
+    + Update: chỉnh sửa thông tin - thêm, sửa, xóa field của một user
+    + Delete: xóa thông tin - xóa một user khỏi DB
+
+
