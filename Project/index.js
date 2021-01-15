@@ -2,7 +2,6 @@ import './screens/register-screen.js'
 import './screens/login-screen.js'
 import './components/input-wrapper.js'
 import'./screens/story-screen.js'
-redirect ('register')
 export function redirect (screenName) {
     if(screenName === 'login') {
         document.querySelector('#app').innerHTML= `<login-screen></login-screen>`
@@ -14,3 +13,15 @@ export function redirect (screenName) {
         document.querySelector('#app').innerHTML= `<story-screen></story-screen>`
     }
 }
+firebase.auth().onAuthStateChanged((user) =>{
+    if (user) {
+        window.currentUser = {
+            id: user.uid,
+            email: user.email,
+            displayName: user.displayName,
+        }
+        redirect ('story')
+    }else {
+        redirect('login')
+    }
+})

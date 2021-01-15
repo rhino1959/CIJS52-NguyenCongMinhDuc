@@ -27,7 +27,7 @@ class StoryScreen extends HTMLElement{
       </style>
       <div class="container">
         <form id="register-form">
-          <div class="title">Welcom ${firebase.auth().currentUser.displayName}</div>
+          <div class="title">Welcom ${currentUser.displayName}</div>
           <div id="redirect">Log Out</div>
         </form>
       </div>
