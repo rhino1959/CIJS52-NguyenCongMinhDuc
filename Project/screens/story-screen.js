@@ -25,17 +25,15 @@ class StoryScreen extends HTMLElement{
       <style>
         ${style}
       </style>
+      <story-header></story-header>
+      <create-post></create-post>
       <div class="container">
-        <form id="register-form">
-          <div class="title">Welcom ${currentUser.displayName}</div>
-          <div id="redirect">Log Out</div>
-        </form>
       </div>
     `
-    this._shadowRoot.getElementById('redirect')
-    .addEventListener('click', () =>{
-      redirect('login');
-    })
+    // this._shadowRoot.getElementById('redirect')
+    // .addEventListener('click', () =>{
+    //   redirect('login');
+    // })
   }
 }
 window.customElements.define('story-screen', StoryScreen)
